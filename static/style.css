@@ -1,0 +1,19 @@
+#elipses {
+    background: url("../images/elipses.png") no-repeat;
+}
+
+#open-cerimony-card {
+    background: -webkit-linear-gradient(0deg, #785A88, #D8B2B6);
+}
+
+#inside-days-card {
+    background-color: #F16645;
+}
+
+#why-participate {
+    background-color: #4353A3;
+}
+
+#partners {
+    background: url("../images/fundo_rosa.png") repeat;
+}
