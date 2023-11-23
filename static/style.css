@@ -1,7 +1,20 @@
-#elipses {
-    background: url("../images/elipses.png") no-repeat;
-    background-size: 100% 100%;
+body {
+    font-family: 'Outfit', sans-serif !important;
 }
+
+.biv-color-text {
+    color: #4353A3;
+}
+
+.wide-letter-spacing {
+    letter-spacing: 0.5rem;
+}
+
+/* #elipses {
+    background: url("../images/elipses.png") no-repeat;
+    background-size: cover;
+    background-position: top 50%;
+} */
 
 #open-cerimony-card {
     background: -webkit-linear-gradient(0deg, #785A88, #D8B2B6);
@@ -16,5 +29,12 @@
 }
 
 #partners {
+    background: url("../images/fundo_rosa.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0% 50%;
+}
+
+#faqs {
     background: url("../images/fundo_rosa.png") repeat;
+    background-position: 0% 50%;
 }
