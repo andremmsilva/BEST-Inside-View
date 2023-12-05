@@ -1,0 +1,79 @@
+.my-btn-yellow {
+    background-color: #fbaf37;
+}
+
+.my-btn-yellow:hover {
+    background-color: #c98c2c;
+}
+
+.my-btn-yellow:focus {
+    box-shadow: rgba(201, 140, 44, .4) 0 0 0 3px;
+}
+
+.my-btn-yellow:disabled {
+    background-color: #fcbf5f;
+}
+
+.my-btn-yellow:active {
+    background-color: #e29e32;
+}
+
+.my-btn-pink {
+    background-color: #f296a2;
+}
+
+.my-btn-pink:hover {
+    background-color: #c27882;
+}
+
+.my-btn-pink:focus {
+    box-shadow: rgba(194, 120, 130, .4) 0 0 0 3px;
+}
+
+.my-btn-pink:disabled {
+    background-color: #f5abb5;
+}
+
+.my-btn-pink:active {
+    background-color: #da8792;
+}
+
+.my-btn-blue {
+    background-color: #4353a3;
+}
+
+.my-btn-blue:hover {
+    background-color: #364282;
+}
+
+.my-btn-blue:focus {
+    box-shadow: rgba(54, 66, 130, .4) 0 0 0 3px;
+}
+
+.my-btn-blue:disabled {
+    background-color: #6975b5;
+}
+
+.my-btn-blue:active {
+    background-color: #3c4b93;
+}
+
+.my-btn-orange {
+    background-color: #f16645;
+}
+
+.my-btn-orange:hover {
+    background-color: #c15237;
+}
+
+.my-btn-orange:focus {
+    box-shadow: rgba(193, 82, 55, .4) 0 0 0 3px;
+}
+
+.my-btn-orange:disabled {
+    background-color: #f4856a;
+}
+
+.my-btn-orange:active {
+    background-color: #d95c3e;
+}

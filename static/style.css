@@ -6,15 +6,129 @@ body {
     color: #4353A3;
 }
 
+.wider-letter-spacing {
+    letter-spacing: .25rem;
+}
+
 .wide-letter-spacing {
     letter-spacing: 0.5rem;
 }
 
-/* #elipses {
-    background: url("../images/elipses.png") no-repeat;
-    background-size: cover;
-    background-position: top 50%;
-} */
+.elipses {
+    background:
+        radial-gradient(circle at 95% 48%, rgba(67, 83, 163, 1) 0%, rgba(67, 83, 163, 0) 23%),
+        radial-gradient(circle at 67% 110%, rgba(241, 102, 69, 1) 0%, rgba(67, 83, 163, 0) 29%),
+        radial-gradient(circle at 5% 58%, rgba(251, 175, 55, 1) 0%, rgba(67, 83, 163, 0) 28%),
+        radial-gradient(circle at 31% 5%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 23%);
+}
+
+.my-btn {
+    appearance: none;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.my-btn:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.my-btn:focus {
+    outline: none;
+}
+
+.my-btn:disabled {
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.my-btn:active {
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+#experiment {
+    background: rgba(255, 255, 255, .9);
+}
+
+#imgcarousel-container {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden !important;
+    width: 0px;
+    max-width: 95%;
+}
+
+#imgcarousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.itemcarousel {
+    width: 0px;
+    /* Adjust the width as needed */
+    height: 0px;
+    /* Adjust the height as needed */
+    margin: 4px;
+    /* Adjust the margin as needed */
+}
+
+.carousel-image {
+    object-fit: cover;
+}
+
+.carousel-btn {
+    display: none;
+    border-radius: 15px;
+    /* box-shadow: 10px 10px 5px black; */
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    position: absolute;
+    z-index: 1;
+    margin: 4px;
+    transition: font-size 0.5s ease-out;
+}
+
+#carousel-prev-btn {
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 5%;
+}
+
+#carousel-prev-btn:active {
+    font-size: calc(1.05rem + .9vw) !important;
+}
+
+#carousel-next-btn {
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 5%;
+}
+
+#carousel-next-btn:active {
+    font-size: calc(1.05rem + .9vw) !important;
+}
+
+#click-here {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 4px solid #f16645;
+    border-radius: 10px;
+    color: #f16645;
+}
 
 #open-cerimony-card {
     background: -webkit-linear-gradient(0deg, #785A88, #D8B2B6);
