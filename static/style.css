@@ -61,64 +61,25 @@ body {
     background: rgba(255, 255, 255, .9);
 }
 
-#imgcarousel-container {
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden !important;
-    width: 0px;
-    max-width: 95%;
+/* Add custom CSS for transparent cards with a white border */
+.card {
+    /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    height: 100% !important;
 }
 
-#imgcarousel {
+/* This ensures the cards have equal height and width regardless of the content */
+.row-equal>div[class*='col-']>.card {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    flex-direction: column;
 }
 
-.itemcarousel {
-    width: 0px;
-    /* Adjust the width as needed */
-    height: 0px;
-    /* Adjust the height as needed */
-    margin: 4px;
-    /* Adjust the margin as needed */
+.card-body {
+    flex-grow: 1;
 }
 
-.carousel-image {
-    object-fit: cover;
-}
-
-.carousel-btn {
-    display: none;
-    border-radius: 15px;
-    /* box-shadow: 10px 10px 5px black; */
-    cursor: pointer;
-    border: none;
-    background: none;
-    outline: none;
-    position: absolute;
-    z-index: 1;
-    margin: 4px;
-    transition: font-size 0.5s ease-out;
-}
-
-#carousel-prev-btn {
-    bottom: 50%;
-    transform: translateY(50%);
-    left: 5%;
-}
-
-#carousel-prev-btn:active {
-    font-size: calc(1.05rem + .9vw) !important;
-}
-
-#carousel-next-btn {
-    bottom: 50%;
-    transform: translateY(50%);
-    right: 5%;
-}
-
-#carousel-next-btn:active {
-    font-size: calc(1.05rem + .9vw) !important;
+#what-is-biv-box {
+    background: rgba(220, 220, 220, 0.4);
 }
 
 #click-here {
@@ -131,7 +92,8 @@ body {
 }
 
 #open-cerimony-card {
-    background: -webkit-linear-gradient(0deg, #785A88, #D8B2B6);
+    background: -webkit-linear-gradient(0deg, #D8B2B6, #785A88);
+    opacity: 80%;
 }
 
 #inside-days-card {

@@ -28,8 +28,12 @@ function renderCarousel() {
     carouselContainer.style.width = carouselWidth.toString().concat("px");
     if (w < 768) {
         carouselItemWidth = carouselWidth - 8;
+        prevBtn.children[0].className = "bi bi-arrow-left-square-fill text-light";
+        nextBtn.children[0].className = "bi bi-arrow-right-square-fill text-light";
     } else {
         carouselItemWidth = Math.floor(carouselWidth / 3) - 8;
+        prevBtn.children[0].className = "bi bi-chevron-left text-dark";
+        nextBtn.children[0].className = "bi bi-chevron-right text-dark";
     }
     carouselItemHeight = Math.min(carouselItemWidth, maxImageHeight);
     for (let i = 0; i < carousel.children.length; i++) {
