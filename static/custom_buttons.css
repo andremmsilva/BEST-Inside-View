@@ -1,3 +1,38 @@
+.my-btn {
+    appearance: none;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.my-btn:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.my-btn:focus {
+    outline: none;
+}
+
+.my-btn:disabled {
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.my-btn:active {
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
 .my-btn-yellow {
     background-color: #fbaf37;
 }

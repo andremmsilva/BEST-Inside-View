@@ -2,6 +2,12 @@ body {
     font-family: 'Outfit', sans-serif !important;
 }
 
+@media screen and (max-width: 768px){
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+}
+
 .biv-color-text {
     color: #4353A3;
 }
@@ -20,45 +26,6 @@ body {
         radial-gradient(circle at 67% 110%, rgba(241, 102, 69, 1) 0%, rgba(67, 83, 163, 0) 29%),
         radial-gradient(circle at 5% 58%, rgba(251, 175, 55, 1) 0%, rgba(67, 83, 163, 0) 28%),
         radial-gradient(circle at 31% 5%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 23%);
-}
-
-.my-btn {
-    appearance: none;
-    border: 1px solid rgba(27, 31, 35, .15);
-    border-radius: 6px;
-    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    white-space: nowrap;
-}
-
-.my-btn:focus:not(:focus-visible):not(.focus-visible) {
-    box-shadow: none;
-    outline: none;
-}
-
-.my-btn:focus {
-    outline: none;
-}
-
-.my-btn:disabled {
-    border-color: rgba(27, 31, 35, .1);
-    color: rgba(255, 255, 255, .8);
-    cursor: default;
-}
-
-.my-btn:active {
-    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-}
-
-#experiment {
-    background: rgba(255, 255, 255, .9);
 }
 
 /* Add custom CSS for transparent cards with a white border */
@@ -93,7 +60,7 @@ body {
 
 #open-cerimony-card {
     background: -webkit-linear-gradient(0deg, #D8B2B6, #785A88);
-    opacity: 80%;
+    opacity: 85%;
 }
 
 #inside-days-card {

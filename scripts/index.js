@@ -43,7 +43,6 @@ function renderCarousel() {
         element.children[0].style.width = carouselItemWidth.toString().concat("px");
         element.children[0].style.height = carouselItemHeight.toString().concat("px");
     }
-    console.log(Math.floor(w / 2 - carouselWidth / 2));
     prevBtn.style.left = Math.max(8, Math.floor(w / 2 - carouselWidth / 2 - carouselItemWidth / 5))
         .toString().concat("px");
     nextBtn.style.right = Math.max(8, Math.floor(w / 2 - carouselWidth / 2 - carouselItemWidth / 5))
