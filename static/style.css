@@ -2,10 +2,18 @@ body {
     font-family: 'Outfit', sans-serif !important;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     ::-webkit-scrollbar {
         -webkit-appearance: none;
     }
+}
+
+.color-ball-blue {
+    background: radial-gradient(circle at 50% 50%, rgba(67, 83, 163, 0.5) 0%, rgba(67, 83, 163, 0) 75%) !important;
+}
+
+.blue-highlight {
+    box-shadow: 0 0 100px 25px #4353A3;
 }
 
 .biv-color-text {
@@ -22,14 +30,31 @@ body {
 
 .elipses {
     background:
-        radial-gradient(circle at 95% 48%, rgba(67, 83, 163, 1) 0%, rgba(67, 83, 163, 0) 23%),
+        radial-gradient(circle at 100% 48%, rgba(67, 83, 163, 1) 0%, rgba(67, 83, 163, 0) 23%),
         radial-gradient(circle at 67% 110%, rgba(241, 102, 69, 1) 0%, rgba(67, 83, 163, 0) 29%),
         radial-gradient(circle at 5% 58%, rgba(251, 175, 55, 1) 0%, rgba(67, 83, 163, 0) 28%),
         radial-gradient(circle at 31% 5%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 23%);
 }
 
+.elipses-noblue {
+    background:
+        radial-gradient(circle at 95% 14%, rgba(241, 102, 69, 1) 0%, rgba(67, 83, 163, 0) 29%),
+        radial-gradient(circle at 13% 89%, rgba(241, 102, 69, 1) 0%, rgba(67, 83, 163, 0) 29%),
+        radial-gradient(circle at 50% 63%, rgba(251, 175, 55, 0.5) 0%, rgba(67, 83, 163, 0) 28%),
+        radial-gradient(circle at 11% 5%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 23%),
+        radial-gradient(circle at 61% 73%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 23%);
+}
+
+.elipses-blend {
+    background:
+        radial-gradient(circle at 13% 89%, rgba(241, 102, 69, 0.32) 0%, rgba(67, 83, 163, 0) 29%),
+        radial-gradient(circle at 67% 110%, rgba(241, 102, 69, 0.43) 0%, rgba(67, 83, 163, 0) 29%),
+        radial-gradient(circle at 5% 58%, rgba(251, 175, 55, 0.68) 0%, rgba(67, 83, 163, 0) 38%),
+        radial-gradient(circle at 95% 48%, rgba(242, 150, 162, 0.7) 0%, rgba(67, 83, 163, 0) 73%);
+}
+
 /* Add custom CSS for transparent cards with a white border */
-.card {
+.card.border-white {
     /* Semi-transparent background */
     background-color: rgba(255, 255, 255, 0.1) !important;
     height: 100% !important;
@@ -41,21 +66,24 @@ body {
     flex-direction: column;
 }
 
-.card-body {
+.card-body.text-center {
     flex-grow: 1;
+}
+
+#click-here {
+    box-shadow: inset 0 0 2px 4px #f16645;
+    border-radius: 25px;
+    color: #f16645;
+}
+
+@media screen and (max-width: 576px) {
+    #click-here {
+        box-shadow: initial;
+    }
 }
 
 #what-is-biv-box {
     background: rgba(220, 220, 220, 0.4);
-}
-
-#click-here {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border: 4px solid #f16645;
-    border-radius: 10px;
-    color: #f16645;
 }
 
 #open-cerimony-card {
@@ -67,17 +95,12 @@ body {
     background-color: #F16645;
 }
 
-#why-participate {
+#why-participate,
+#testimonials {
     background-color: #4353A3;
 }
 
-#partners {
-    background: url("../images/fundo_rosa.png") no-repeat;
-    background-size: 100% 100%;
-    background-position: 0% 50%;
-}
-
+#partners,
 #faqs {
-    background: url("../images/fundo_rosa.png") repeat;
-    background-position: 0% 50%;
+    background-color: rgba(242, 150, 162, 0.5);
 }
