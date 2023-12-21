@@ -1,59 +1,39 @@
-#imgcarousel-container {
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden !important;
-    width: 0px;
-    max-width: 95%;
-}
-
-#imgcarousel {
+#imageCarousel,
+#testimonialCarousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    /* Hide the overflow to only show the current items */
+    overflow: hidden;
 }
 
-.itemcarousel {
-    width: 0px;
-    /* Adjust the width as needed */
-    height: 0px;
-    /* Adjust the height as needed */
-    margin: 4px;
-    /* Adjust the margin as needed */
+.mycarousel-item {
+    /* Do not allow the items to grow or shrink */
+    flex: none;
+    /* Position relative for inner content alignment */
+    position: relative;
+    /* Full width for mobile */
+    width: 100%;
+    /* Adjust the height */
+    height: 300px;
+    /* Smooth transition for sliding */
+    transition: transform 0.4s ease;
 }
 
-.carousel-image {
+@media (min-width: 768px) {
+    .mycarousel-item {
+        width: 33.3333%;
+        /* 3 items in a row for larger screens */
+    }
+}
+
+
+.mycarousel-item img {
+    width: 95%;
+    /* Set a fixed height if you want a uniform height for all images */
+    height: 100%;
+    /* Cover the area, may be cropped */
     object-fit: cover;
-}
-
-.carousel-btn {
-    display: none;
-    border-radius: 15px;
-    /* box-shadow: 10px 10px 5px black; */
-    cursor: pointer;
-    border: none;
-    background: none;
-    outline: none;
-    position: absolute;
-    z-index: 1;
-    margin: 4px;
-    transition: font-size 0.3s ease-out;
-}
-
-#carousel-prev-btn {
-    bottom: 50%;
-    transform: translateY(50%);
-    left: 5%;
-}
-
-#carousel-prev-btn:active {
-    font-size: calc(0.663rem + .9vw) !important;
-}
-
-#carousel-next-btn {
-    bottom: 50%;
-    transform: translateY(50%);
-    right: 5%;
-}
-
-#carousel-next-btn:active {
-    font-size: calc(0.663rem + .9vw) !important;
+    /* Align the image to the bottom to avoid gaps */
+    vertical-align: bottom;
+    object-position: center;
+    border-radius: 25px;
 }

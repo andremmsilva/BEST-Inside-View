@@ -168,34 +168,42 @@
   </div>
 
   <section id="past-editions" class="text-center elipses py-5">
-    <h1 class="display-4 biv-color-text wide-letter-spacing">Past Editions</h1>
-    <div class="position-relative">
-      <div id="imgcarousel-container" class="position-relative my-5">
-        <div id="imgcarousel">
-          <div class="itemcarousel">
-            <img class="carousel-image" src="./images/carousel/biv2019_1.png" alt="Image 1">
-          </div>
-          <div class="itemcarousel">
-            <img class="carousel-image" src="./images/carousel/bive2019_1.png" alt="Image 2">
-          </div>
-          <div class="itemcarousel">
-            <img class="carousel-image" src="./images/carousel/BIV2020_1.png" alt="Image 3">
-          </div>
-          <div class="itemcarousel">
-            <img class="carousel-image" src="./images/carousel/biv2021_1.png" alt="Image 4">
-          </div>
-          <div class="itemcarousel">
-            <img class="carousel-image" src="./images/carousel/biv2021_2.png" alt="Image 5">
-          </div>
+    <h1 class="display-4 biv-color-text wide-letter-spacing mb-5">Past Editions</h1>
+    <div class="container-lg my-5">
+      <div id="imageCarousel">
+        <div class="mycarousel-item active">
+          <img src="./images/carousel/BIV20-21.png" alt="">
+        </div>
+        <div class="mycarousel-item">
+          <img src="./images/carousel/biv2019(1).png" alt="">
+        </div>
+        <div class="mycarousel-item">
+          <img src="./images/carousel/biv2021(1).png" alt="">
+        </div>
+        <div class="mycarousel-item">
+          <img src="./images/carousel/biv2021.png" alt="">
+        </div>
+        <div class="mycarousel-item">
+          <img src="./images/carousel/bive2019.png" alt="">
+        </div>
+        <div class="mycarousel-item">
+          <img src="./images/carousel/BIV2020.png" alt="">
         </div>
       </div>
-      <button class="carousel-btn fs-2" id="carousel-prev-btn" onclick="prevSlide()">
-        <i class="bi bi-chevron-left"></i>
-      </button>
-      <button class="carousel-btn fs-2" id="carousel-next-btn" onclick="nextSlide()">
-        <i class="bi bi-chevron-right"></i>
-      </button>
     </div>
+    <button class="my-btn my-btn-blue px-4 py-2 text-light mx-2" id="imageCarouselPrev">
+      <p class="fs-4 mb-0">
+        <i class="bi bi-arrow-left-circle"></i>
+        Prev
+      </p>
+    </button>
+    <button class="my-btn my-btn-orange px-4 py-2 text-light mx-2" id="imageCarouselNext">
+      <p class="fs-4 mb-0">
+        Next
+        <i class="bi bi-arrow-right-circle"></i>
+      </p>
+    </button>
+
   </section>
 
   <div id="partners" class="elipses-noblue py-5 container-fluid">
@@ -238,59 +246,37 @@
     </div>
   </div>
 
-  <div id="testimonials" class="py-5 container-fluid">
+  <div id="testimonials" class="text-center py-5 container-fluid">
     <div class="container-lg text-center pt-4">
       <h1 class="display-3 fw-semibold text-light wide-letter-spacing mb-5">Testimonials</h1>
     </div>
-    <div class="row">
-      <div class="mx-auto col-md-4">
-        <div class="card">
-          <div class="card-header text-center color-ball-blue py-4">
-            <p class="fs-4 text-dark">Paticipant from the 10th edition</p>
-          </div>
-          <div class="card-body">
-            <p class="card-text py-3 px-2">
-              "Being the MO was a challenge, as there is a great sense of responsibility because we want the experience
-              of
-              all parties involved to be the best possible. Each decision is made thinking of the students and companies
-              to allow a greater proximity between these and, consequently, greater ease for students to enter the job
-              market, while we show interesting companies that operate in different areas."
-            </p>
-          </div>
-        </div>
+    <div id="testimonialCarousel">
+      <div class="mycarousel-item active">
+
       </div>
-      <div class="mx-auto col-md-4">
-        <div class="card">
-          <div class="card-header text-center color-ball-blue py-4">
-            <p class="fs-4 text-dark">Paticipant from the 10th edition</p>
-          </div>
-          <div class="card-body">
-            <p class="card-text py-3 px-2">
-              "Being the MO was a challenge, as there is a great sense of responsibility because we want the experience
-              of
-              all parties involved to be the best possible. Each decision is made thinking of the students and companies
-              to allow a greater proximity between these and, consequently, greater ease for students to enter the job
-              market, while we show interesting companies that operate in different areas."
-            </p>
-          </div>
-        </div>
+      <div class="mycarousel-item active">
+
       </div>
-      <div class="mx-auto col-md-4">
-        <div class="card">
-          <div class="card-header text-center color-ball-blue py-4">
-            <p class="fs-4 text-dark">Paticipant from the 10th edition</p>
-          </div>
-          <div class="card-body">
-            <p class="card-text py-3 px-2">
-              "Being the MO was a challenge, as there is a great sense of responsibility because we want the experience
-              of
-              all parties involved to be the best possible. Each decision is made thinking of the students and companies
-              to allow a greater proximity between these and, consequently, greater ease for students to enter the job
-              market, while we show interesting companies that operate in different areas."
-            </p>
-          </div>
-        </div>
+      <div class="mycarousel-item active">
+
       </div>
+      <div class="mycarousel-item active">
+
+      </div>
+    </div>
+    <div class="mx-auto col-12 col-md-6 col-lg-4">
+      <button class="my-btn my-btn-yellow px-4 py-2 text-light mx-2" id="testimonialCarouselPrev">
+        <p class="fs-4 mb-0">
+          <i class="bi bi-arrow-left-circle"></i>
+          Prev
+        </p>
+      </button>
+      <button class="my-btn my-btn-orange px-4 py-2 text-light mx-2" id="testimonialCarouselNext">
+        <p class="fs-4 mb-0">
+          Next
+          <i class="bi bi-arrow-right-circle"></i>
+        </p>
+      </button>
     </div>
   </div>
 
@@ -477,7 +463,8 @@
     <div class="row"></div>
   </div>
 
-  <script src="./scripts/index.js"></script>
+  <script type="module" src="./scripts/carousel.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
