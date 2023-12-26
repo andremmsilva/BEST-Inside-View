@@ -19,7 +19,7 @@
 </head>
 
 <body class="bg-light">
-  <nav class="navbar sticky-top bg-light navbar-expand-lg shadow-lg">
+  <nav class="navbar sticky-top semi-transparent navbar-expand-lg shadow-lg">
     <div class="container-lg">
       <a class="navbar-brand" href="https://best.tecnico.ulisboa.pt/">
         <img src="./images/bestlisbon.png" width="100" height="58" alt="BEST Lisbon Logo" class="img-fluid">
@@ -54,6 +54,11 @@
             <button type="button" class="my-btn my-btn-orange px-3 w-100">
               <a class="nav-link active text-white fw-semibold wider-letter-spacing" href="#team">Team</a>
             </button>
+          </li>
+          <li class="nav-item px-2 my-2 my-lg-0">
+            <a href="./pt-pt.html">
+              <img src="./images/pt.svg" alt="Portuguese" width="auto" height="44">
+            </a>
           </li>
         </ul>
       </div>
@@ -171,9 +176,9 @@
     <h1 class="display-1 fw-semibold biv-color-text wide-letter-spacing mt-md-5 mb-5">Past Editions</h1>
     <div class="container-lg py-md-5">
       <section id="slider">
-        <input type="radio" name="slider" id="s1" class="past-editions-s">
+        <input type="radio" name="slider" id="s1" class="past-editions-s" checked>
         <input type="radio" name="slider" id="s2" class="past-editions-s">
-        <input type="radio" name="slider" id="s3" class="past-editions-s" checked>
+        <input type="radio" name="slider" id="s3" class="past-editions-s">
         <input type="radio" name="slider" id="s4" class="past-editions-s">
         <input type="radio" name="slider" id="s5" class="past-editions-s">
         <label for="s1" id="slide1">
@@ -192,12 +197,25 @@
           <img class="slider-image" src="images/carousel/biv2021.png" alt="Slide 5">
         </label>
       </section>
-      <button id="past-editions-prev" class="text-light my-btn my-btn-blue px-3 py-2 mx-2">
-        Prev
-      </button>
-      <button id="past-editions-next" class="my-btn my-btn-yellow px-3 py-2 mx-2">
-        Next
-      </button>
+      <div class="d-flex align-items-center justify-content-center">
+        <i id="past-editions-prev" class="bi bi-arrow-left-circle fs-4 text-dark px-2"></i>
+        <div class="text-dark px-2 fs-6 past-editions-indicator">
+          <i class="bi bi-circle"></i>
+        </div>
+        <div class="text-dark px-2 fs-6 past-editions-indicator">
+          <i class="bi bi-circle"></i>
+        </div>
+        <div class="text-dark px-2 fs-6 past-editions-indicator">
+          <i class="bi bi-circle"></i>
+        </div>
+        <div class="text-dark px-2 fs-6 past-editions-indicator">
+          <i class="bi bi-circle"></i>
+        </div>
+        <div class="text-dark px-2 fs-6 past-editions-indicator">
+          <i class="bi bi-circle"></i>
+        </div>
+        <i id="past-editions-next" class="bi bi-arrow-right-circle fs-4 text-dark px-2"></i>
+      </div>
     </div>
   </section>
 
@@ -244,9 +262,9 @@
       <h1 class="display-3 fw-semibold text-light wide-letter-spacing mb-5">Testimonials</h1>
       <div class="container-lg my-5">
         <section id="slider2">
-          <input type="radio" name="slider2" id="s12" class="testimonials-s">
+          <input type="radio" name="slider2" id="s12" class="testimonials-s" checked>
           <input type="radio" name="slider2" id="s22" class="testimonials-s">
-          <input type="radio" name="slider2" id="s32" class="testimonials-s" checked>
+          <input type="radio" name="slider2" id="s32" class="testimonials-s">
           <input type="radio" name="slider2" id="s42" class="testimonials-s">
           <input type="radio" name="slider2" id="s52" class="testimonials-s">
           <label for="s12" id="slide12">
@@ -311,18 +329,31 @@
             </div>
           </label>
         </section>
-        <button id="testimonials-prev" class="my-btn my-btn-pink px-3 py-2 mx-2">
-          Prev
-        </button>
-        <button id="testimonials-next" class="my-btn my-btn-orange px-3 py-2 mx-2">
-          Next
-        </button>
+        <div class="d-flex align-items-center justify-content-center">
+          <i id="testimonials-prev" class="bi bi-arrow-left-circle fs-4 text-light px-2"></i>
+          <div class="text-light px-2 fs-6 testimonials-indicator">
+            <i class="bi bi-circle"></i>
+          </div>
+          <div class="text-light px-2 fs-6 testimonials-indicator">
+            <i class="bi bi-circle"></i>
+          </div>
+          <div class="text-light px-2 fs-6 testimonials-indicator">
+            <i class="bi bi-circle"></i>
+          </div>
+          <div class="text-light px-2 fs-6 testimonials-indicator">
+            <i class="bi bi-circle"></i>
+          </div>
+          <div class="text-light px-2 fs-6 testimonials-indicator">
+            <i class="bi bi-circle"></i>
+          </div>
+          <i id="testimonials-next" class="bi bi-arrow-right-circle fs-4 text-light px-2"></i>
+        </div>
       </div>
     </div>
   </section>
 
   <div id="faqs" class="container-fluid py-5 elipses-blend">
-    <div class="container-lg mb-5">
+    <div class="container-lg mb-md-5">
       <h1 class="mt-5 mb-0 display-1 fw-semibold text-light wider-letter-spacing">FAQS</h1>
     </div>
     <div class="container lg py-5">
@@ -335,7 +366,8 @@
           </a>
           <div class="collapse" id="collapse3">
             <div class="card-body text-light">
-              BIV is open to all students enrolled at Instituto Superior Técnico.
+              <p class="fs-5">
+                BIV is open to all students enrolled at Instituto Superior Técnico.</p>
             </div>
           </div>
         </div>
@@ -347,8 +379,10 @@
           </a>
           <div class="collapse" id="collapse4">
             <div class=" card-body text-light">
-              In order to sign up for Inside Days, just fill in the forms with the information that will be used in your
-              matching process.
+              <p class="fs-5">
+                In order to sign up for Inside Days, just fill in the forms with the information that will be used in
+                your
+                matching process.</p>
             </div>
           </div>
         </div>
@@ -362,11 +396,12 @@
           </a>
           <div class="collapse" id="collapse5">
             <div class=" card-body text-light">
-              The organization suggests participating in both parts of BEST Inside View.
-              By participating in the Opening Cerimony you will have the opportunity to hear pitches
-              from the companies and get to ask them all the questions you want so you can choose
-              wisely where you want to spend your Inside Day. However, it is not mandatory for the participants
-              to attend.
+              <p class="fs-5">
+                The organization suggests participating in both parts of BEST Inside View.
+                By participating in the Opening Cerimony you will have the opportunity to hear pitches
+                from the companies and get to ask them all the questions you want so you can choose
+                wisely where you want to spend your Inside Day. However, it is not mandatory for the participants
+                to attend.</p>
             </div>
           </div>
         </div>
@@ -378,8 +413,9 @@
           </a>
           <div class="collapse" id="collapse6">
             <div class=" card-body text-light">
-              The matching is always done respecting the preferences of students and companies in accordance with
-              criteria defined by the organization that is present in the event regulation.
+              <p class="fs-5">
+                The matching is always done respecting the preferences of students and companies in accordance with
+                criteria defined by the organization that is present in the event regulation.</p>
             </div>
           </div>
         </div>
@@ -393,7 +429,9 @@
           </a>
           <div class="collapse" id="collapse7">
             <div class=" card-body text-light">
-              You will receive an email from BEST Lisbon one week after de end of the Inside Days application period.
+              <p class="fs-5">
+                You will receive an email from BEST Lisbon one week after de end of the Inside Days application period.
+              </p>
             </div>
           </div>
         </div>
@@ -405,8 +443,10 @@
           </a>
           <div class="collapse" id="collapse8">
             <div class=" card-body text-light">
-              We will exchange contacts between you and the company's responsible in order to arrange everything for
-              your Inside Day. The communication will be mediated by us, specially our communications responsible.
+              <p class="fs-5">
+                We will exchange contacts between you and the company's responsible in order to arrange everything for
+                your Inside Day. The communication will be mediated by us, specially our communications responsible.
+              </p>
             </div>
           </div>
         </div>
@@ -420,8 +460,10 @@
           </a>
           <div class="collapse" id="collapse9">
             <div class=" card-body text-light">
-              It is mandatory to submit your CV to participate in BEST Inside View. The CV can be in Portuguese or
-              English.
+              <p class="fs-5">
+                It is mandatory to submit your CV to participate in BEST Inside View. The CV can be in Portuguese or
+                English.
+              </p>
             </div>
           </div>
         </div>
@@ -433,7 +475,9 @@
           </a>
           <div class="collapse" id="collapse10">
             <div class=" card-body text-light">
-              The Opening Cerimony for BIV is a free event for every student interested in attending.
+              <p class="fs-5">
+                The Opening Cerimony for BIV is a free event for every student interested in attending.
+              </p>
             </div>
           </div>
         </div>
@@ -447,8 +491,10 @@
           </a>
           <div class="collapse" id="collapse11">
             <div class=" card-body text-light">
-              The Inside Days for BIV is a free event but you'll have to make a 5,00€ deposit in order to guarantee your
-              participation. The deposit will be returned at the end of the event according to the regulation.
+              <p class="fs-5">The Inside Days for BIV is a free event but you'll have to make a 5,00€ deposit in order
+                to guarantee your
+                participation. The deposit will be returned at the end of the event according to the regulation.
+              </p>
             </div>
           </div>
         </div>
@@ -460,8 +506,10 @@
           </a>
           <div class="collapse" id="collapse12">
             <div class=" card-body text-light">
-              The payment of the deposit must be sent to the "Local BEST Group Lisbon" account. Details needed to
-              process the payment will be available on the application forms .
+              <p class="fs-5">
+                The payment of the deposit must be sent to the "Local BEST Group Lisbon" account. Details needed to
+                process the payment will be available on the application forms .
+              </p>
             </div>
           </div>
         </div>
@@ -474,8 +522,9 @@
         </a>
         <div class="collapse" id="collapse13">
           <div class=" card-body text-light">
-            If you have any doubts or problems you can reach out to us by
-            sending an email to lisbon@best-eu.org
+            <p class="fs-5">If you have any doubts or problems you can reach out to us by
+              sending an email to lisbon@best-eu.org
+            </p>
           </div>
         </div>
       </div>
@@ -579,23 +628,23 @@
   <footer class="container-fluid pt-5" id="footer">
     <div class="container">
       <footer class="py-3 py-4">
-        <ul class="nav justify-content-between border-bottom border-2 pb-3 mb-3">
-          <li class="nav-item">
+        <div class="row justify-content-between border-bottom border-2 pb-3 mb-3">
+          <div class="col-md my-3 my-md-0">
             <div class="text-center">
               <a href="#" class="fs-4 nav-link px-2 text-light wide-letter-spacing">Contacts</a>
-              <p class="text-light fs-6">lisbon@best-eu.org</p>
+              <p class="text-light fs-6 mt-2">lisbon@best-eu.org</p>
             </div>
-          </li>
-          <li class="nav-item">
+          </div>
+          <div class="col-md my-3 my-md-0">
             <div class="text-center">
               <a href="#" class="fs-4 nav-link px-2 text-light wide-letter-spacing">Address</a>
-              <p class="text-light fs-6">Av. Rovisco Pais, 1</p>
+              <p class="text-light fs-6 mt-2">Av. Rovisco Pais, 1</p>
             </div>
-          </li>
-          <li class="nav-item">
+          </div>
+          <div class="col-md my-3 my-md-0">
             <div class="text-center">
               <a href="#" class="fs-4 nav-link px-2 text-light wide-letter-spacing">Follow us</a>
-              <div class="d-flex justify-content-between">
+              <div class="d-flex justify-content-center mt-2">
                 <a href="https://www.facebook.com/bestlisboa">
                   <i class="bi bi-facebook text-light fs-5 px-2"></i>
                 </a>
@@ -610,8 +659,8 @@
                 </a>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
         <div class="py-2">
           <p class="fs-4 text-center text-light wider-letter-spacing">All rights reserved</p>
           <p class="fs-4 text-center text-light wider-letter-spacing">BEST Lisbon</p>
