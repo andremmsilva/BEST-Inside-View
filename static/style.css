@@ -17,19 +17,19 @@ body {
 }
 
 .blue-highlight {
-    box-shadow: 0 0 10vh 1vw #4353A3;
+    filter: drop-shadow(0px 0px 50px #4353A3);
 }
 
 .yellow-highlight {
-    box-shadow: 0 0 10vh 1vw #fbaf37;
+    filter: drop-shadow(0px 0px 50px #fbaf37);
 }
 
 .pink-highlight {
-    box-shadow: 0 0 10vh 1vw #f296a2;
+    filter: drop-shadow(0px 0px 50px #f296a2);
 }
 
 .orange-highlight {
-    box-shadow: 0 0 10vh 1vw #f16645;
+    filter: drop-shadow(0px 0px 50px #f16645);
 }
 
 .biv-color-text {
