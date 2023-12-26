@@ -65,6 +65,11 @@ body {
         radial-gradient(circle at 95% 48%, rgba(242, 150, 162, 0.7) 0%, rgba(67, 83, 163, 0) 73%);
 }
 
+.elipses-team {
+    background:
+        radial-gradient(circle at 95% 0%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 23%);
+}
+
 /* Add custom CSS for transparent cards with a white border */
 .card.border-white {
     /* Semi-transparent background */
@@ -98,6 +103,10 @@ body {
     #click-here {
         box-shadow: initial;
     }
+    
+    #read-regulations {
+        box-shadow: initial;
+    }
 }
 
 #what-is-biv-box {
@@ -121,6 +130,12 @@ body {
 #partners,
 #faqs {
     background-color: rgba(242, 150, 162, 0.5);
+}
+
+#partners img {
+    height: 100px; /* Set the desired height for the images */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure images don't exceed their container */
 }
 
 #footer {
