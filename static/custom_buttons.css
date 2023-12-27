@@ -1,7 +1,7 @@
 .my-btn {
     appearance: none;
     border: 1px solid rgba(27, 31, 35, .15);
-    border-radius: 6px;
+    border-radius: 10px;
     box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
     box-sizing: border-box;
     cursor: pointer;
