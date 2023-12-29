@@ -141,11 +141,8 @@ body {
 
 #partners img {
     height: 100px;
-    /* Set the desired height for the images */
     width: auto;
-    /* Maintain aspect ratio */
     max-width: 100%;
-    /* Ensure images don't exceed their container */
 }
 
 #footer {
