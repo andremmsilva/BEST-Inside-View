@@ -25,7 +25,7 @@ body {
 }
 
 .pink-highlight {
-    filter: drop-shadow(0px 0px 50px #f296a2);
+    filter: drop-shadow(0px 0px 50px #f07a89);
 }
 
 .orange-highlight {
@@ -71,7 +71,10 @@ body {
 
 .elipses-team {
     background:
-        radial-gradient(circle at 95% 0%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 23%);
+        radial-gradient(circle at 100% 48%, rgba(67, 83, 163, 0.30) 0%, rgba(67, 83, 163, 0) 33%),
+        radial-gradient(circle at 87% 100%, rgba(241, 102, 69, 0.42) 0%, rgba(67, 83, 163, 0) 39%),
+        radial-gradient(circle at 0% 58%, rgba(251, 175, 55, 0.60) 0%, rgba(67, 83, 163, 0) 18%),
+        radial-gradient(circle at 31% 0%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 13%);
 }
 
 /* Add custom CSS for transparent cards with a white border */
@@ -118,7 +121,7 @@ body {
 }
 
 #open-cerimony-card {
-    background: -webkit-linear-gradient(0deg, #D8B2B6, #785A88);
+    background: -webkit-linear-gradient(0deg, rgba(251, 175, 55, 0.75) 10%, #fbaf37);
     opacity: 85%;
 }
 
